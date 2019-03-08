@@ -19,7 +19,7 @@ namespace DelegateAndEvents
         public void Method2()
         {
             MyDelegate myDelegate = new MyDelegate(Method1);
-            myDelegate(50);
+            myDelegate();
         }
     }
 }
@@ -30,8 +30,7 @@ namespace DelegateAndEvents
     
        public static void Main(string[] args)
         {
-            DelegateExercises
-                delegateExercises = new DelegateExercises();
+            DelegateExercises delegateExercises = new DelegateExercises();
             delegateExercises.Method2();
        }
     }
